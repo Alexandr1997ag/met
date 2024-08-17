@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    container_name: my_telegram_bot
+    environment:
+      - API_TOKEN=6851079900:AAEcLqzD-o5DLjH1uAgApTwwtn4a5w0AU0I
+    volumes:
+      - .:/app
+    restart: always
